@@ -1,0 +1,10 @@
+# Local preview/screenshot artifacts (not part of the site)
+.shots/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
