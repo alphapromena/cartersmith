@@ -10,7 +10,7 @@
   <meta property="og:description" content="Serious counsel. Plain language. Chicago & Maryland, since 1997." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -63,6 +63,19 @@
     </div>
   </section>
 
+  <!-- ===== PRESS ===== -->
+  <section class="press" aria-label="As featured on">
+    <div class="wrap press__inner">
+      <span class="press__label">As featured on</span>
+      <ul class="press__logos">
+        <li class="logo logo--cnn" aria-label="CNN">CNN</li>
+        <li class="logo logo--npr" aria-label="NPR">npr</li>
+        <li class="logo logo--serif" aria-label="Chicago Tribune">Chicago Tribune</li>
+        <li class="logo logo--serif" aria-label="The Washington Post">The Washington Post</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ===== PRACTICE INDEX ===== -->
   <section class="section practice" id="practice">
     <div class="wrap">
@@ -86,19 +99,33 @@
   <!-- ===== ABOUT ===== -->
   <section class="section about" id="about">
     <div class="wrap about__grid">
+      <figure class="figure figure--portrait reveal">
+        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=900&auto=format&fit=crop" alt="Attorney Kamran Memon" loading="lazy" />
+        <figcaption>Kamran Memon, Attorney at Law</figcaption>
+      </figure>
       <div class="about__main reveal">
         <span class="shead__label">The attorney</span>
         <h2 class="about__title">Kamran Memon</h2>
         <p class="about__quote">“The law is complicated. My job is to make your situation feel simple — and to fight for the outcome you deserve.”</p>
         <p>Attorney Kamran Memon has practiced law since 1997. A graduate of the University of Chicago Law School — where he studied under Professor Barack Obama — he has spent his career advocating for families, workers and businesses, with a particular commitment to the Pakistani, Muslim and South Asian communities of Chicago and Maryland.</p>
       </div>
-      <dl class="facts reveal">
-        <div><dt>Bar admission</dt><dd>1997</dd></div>
-        <div><dt>Education</dt><dd>University of Chicago Law School</dd></div>
-        <div><dt>Studied under</dt><dd>Prof. Barack Obama</dd></div>
-        <div><dt>Communities</dt><dd>Pakistani · Muslim · South Asian</dd></div>
-        <div><dt>Serving</dt><dd>Illinois &amp; Maryland</dd></div>
-      </dl>
+    </div>
+    <dl class="wrap facts facts--row reveal">
+      <div><dt>Bar admission</dt><dd>1997</dd></div>
+      <div><dt>Education</dt><dd>U. of Chicago Law</dd></div>
+      <div><dt>Studied under</dt><dd>Prof. Barack Obama</dd></div>
+      <div><dt>Communities</dt><dd>Pakistani · Muslim · South Asian</dd></div>
+      <div><dt>Serving</dt><dd>Illinois &amp; Maryland</dd></div>
+    </dl>
+  </section>
+
+  <!-- ===== STATEMENT BAND ===== -->
+  <section class="band" aria-label="Our commitment">
+    <div class="band__media" aria-hidden="true"></div>
+    <div class="wrap band__inner">
+      <p class="kicker kicker--light"><b>●</b> In your corner</p>
+      <h2 class="band__title">Twenty-five years standing up for Chicago &amp; Maryland families.</h2>
+      <a href="#contact" class="btn">Start your consultation</a>
     </div>
   </section>
 

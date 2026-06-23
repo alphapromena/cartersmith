@@ -156,6 +156,38 @@ dt,.f label,.note,.foot__bar,.foot__legal,.loc__dir{font-family:var(--mono)}
 .foot__bar{display:flex;justify-content:space-between;gap:16px;padding-top:24px;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft)}
 .foot__legal{margin-top:18px;font-size:.66rem;line-height:1.7;color:rgba(21,20,15,.45);max-width:900px}
 
+/* ---------- Press bar ---------- */
+.press{border-bottom:1px solid var(--line);background:var(--paper-2)}
+.press__inner{display:flex;align-items:center;gap:40px;padding:26px 0;flex-wrap:wrap}
+.press__label{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.16em;color:var(--ink-soft);white-space:nowrap}
+.press__logos{list-style:none;display:flex;align-items:center;gap:46px;margin:0;padding:0;flex-wrap:wrap}
+.logo{color:var(--ink);opacity:.62;transition:opacity .25s var(--ease);line-height:1;filter:saturate(0)}
+.logo:hover{opacity:1}
+.logo--cnn{font-family:var(--disp);font-weight:800;font-size:1.5rem;letter-spacing:-.04em}
+.logo--npr{font-family:var(--disp);font-weight:800;font-size:1.45rem;letter-spacing:-.02em;text-transform:lowercase}
+.logo--serif{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:1.28rem;letter-spacing:-.01em}
+
+/* ---------- Figures / duotone images ---------- */
+.figure{position:relative;margin:0;background:var(--accent);overflow:hidden}
+.figure img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06);mix-blend-mode:luminosity;opacity:.92}
+.figure figcaption{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--paper);background:rgba(21,20,15,.55);padding:5px 9px;backdrop-filter:blur(4px)}
+.figure--portrait{aspect-ratio:4/5}
+
+/* about now: portrait | copy, facts as a row beneath */
+.about__grid{grid-template-columns:340px 1fr}
+.facts--row{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);margin-top:54px}
+.facts--row div{padding:20px 20px 0 0;border-bottom:0;border-right:1px solid var(--line-soft)}
+.facts--row div:last-child{border-right:0}
+
+/* ---------- Statement band (full-bleed photo) ---------- */
+.band{position:relative;padding:120px 0;color:var(--paper);border-bottom:1px solid var(--ink);isolation:isolate;overflow:hidden}
+.band__media{position:absolute;inset:0;z-index:-1;background:var(--ink)}
+.band__media::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(15,40,33,.55),rgba(21,20,15,.78)),url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1600&auto=format&fit=crop");background-size:cover;background-position:center;filter:grayscale(.45)}
+.band__inner{max-width:880px}
+.kicker--light{color:rgba(242,241,236,.8)}
+.kicker--light b{color:var(--accent-2)}
+.band__title{font-size:clamp(2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.04;margin:0 0 32px;text-wrap:balance}
+
 /* ---------- Reveal ---------- */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}
@@ -169,6 +201,13 @@ dt,.f label,.note,.foot__bar,.foot__legal,.loc__dir{font-family:var(--mono)}
   .nav.open .nav__links{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line)}
   .nav.open .nav__links a{padding:16px 24px;border-top:1px solid var(--line-soft)}
   .hero__grid,.about__grid,.loc__grid,.contact__grid{grid-template-columns:1fr;gap:40px}
+  .figure--portrait{max-width:360px;aspect-ratio:5/4}
+  .facts--row{grid-template-columns:repeat(2,1fr);margin-top:36px}
+  .facts--row div{padding:16px 16px 16px 0}
+  .facts--row div:nth-child(2){border-right:0}
+  .band{padding:84px 0}
+  .press__inner{gap:24px}
+  .press__logos{gap:28px}
   .hero__head{padding-right:0}
   .hero__spec{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:30px}
   .approach__grid{grid-template-columns:1fr 1fr}
@@ -182,6 +221,10 @@ dt,.f label,.note,.foot__bar,.foot__legal,.loc__dir{font-family:var(--mono)}
   .row__go{display:none}
   .row:hover{padding-left:12px;padding-right:12px}
   .loc__cols,.f2{grid-template-columns:1fr}
+  .facts--row{grid-template-columns:1fr}
+  .facts--row div{border-right:0;border-bottom:1px solid var(--line-soft)}
+  .logo--cnn,.logo--npr{font-size:1.25rem}
+  .logo--serif{font-size:1.05rem}
   .approach__grid{grid-template-columns:1fr}
   .foot__top{flex-direction:column;align-items:flex-start}
   .foot__bar{flex-direction:column;gap:6px}
