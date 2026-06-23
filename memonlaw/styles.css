@@ -171,7 +171,9 @@ dt,.f label,.note,.foot__bar,.foot__legal,.loc__dir{font-family:var(--mono)}
 .figure{position:relative;margin:0;background:var(--accent);overflow:hidden}
 .figure img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06);mix-blend-mode:luminosity;opacity:.92}
 .figure figcaption{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--paper);background:rgba(21,20,15,.55);padding:5px 9px;backdrop-filter:blur(4px)}
-.figure--portrait{aspect-ratio:4/5}
+.figure--portrait{aspect-ratio:4/5;background:var(--paper-2)}
+.figure--portrait img{filter:grayscale(1) contrast(1.03);mix-blend-mode:normal;opacity:1;transition:filter .5s var(--ease)}
+.figure--portrait:hover img{filter:grayscale(0) contrast(1)}
 
 /* about now: portrait | copy, facts as a row beneath */
 .about__grid{grid-template-columns:340px 1fr}
